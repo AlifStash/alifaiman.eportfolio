@@ -68,6 +68,7 @@
     <main class="pt-24 pb-12">
         
         <section id="hero" class="max-w-6xl mx-auto px-6 min-h-[75vh] flex flex-col justify-center items-start pt-10 pb-20">
+            <img src="profile.jpg" alt="Alif Aiman Bin Othman" class="w-32 h-32 md:w-40 md:h-40 rounded-full border-4 border-brand-teal object-cover shadow-lg mb-8 hover:border-brand-mint transition-colors duration-300">
             <p class="text-brand-mint font-mono mb-4 text-sm md:text-base tracking-wide">Welcome, I am</p>
             <h1 class="text-5xl md:text-7xl font-bold mb-4 tracking-tight text-white">Alif Aiman Bin Othman.</h1>
             <h2 class="text-3xl md:text-5xl font-bold text-brand-teal mb-6">Computer Science Graduate & Junior Network Engineer</h2>
@@ -174,25 +175,52 @@
                     <div class="h-px bg-brand-teal/50 flex-grow"></div>
                 </div>
 
-                <div class="bg-brand-purple p-8 rounded-xl border border-brand-teal/40 hover:border-brand-mint transition-colors duration-300 shadow-xl">
-                    <div class="flex items-start justify-between flex-wrap gap-4 mb-4">
-                        <div>
-                            <span class="text-brand-teal font-mono font-semibold tracking-wider text-sm uppercase">Final Year Project</span>
-                            <h3 class="text-2xl font-bold text-white mt-2">Real-Time Bahasa Isyarat Malaysia (BIM) Translation System</h3>
+                <div class="space-y-8">
+                    <!-- Final Year Project -->
+                    <div class="bg-brand-purple p-8 rounded-xl border border-brand-teal/40 hover:border-brand-mint transition-colors duration-300 shadow-xl">
+                        <div class="flex items-start justify-between flex-wrap gap-4 mb-4">
+                            <div>
+                                <span class="text-brand-teal font-mono font-semibold tracking-wider text-sm uppercase">Final Year Project</span>
+                                <h3 class="text-2xl font-bold text-white mt-2">Real-Time Bahasa Isyarat Malaysia (BIM) Translation System</h3>
+                            </div>
+                            <div class="text-brand-mint text-3xl opacity-80"><i class="fas fa-mobile-alt"></i></div>
                         </div>
-                        <div class="text-brand-mint text-3xl opacity-80"><i class="fas fa-mobile-alt"></i></div>
+                        <ul class="list-disc list-inside space-y-3 text-white/85 mt-4 marker:text-brand-mint">
+                            <li>Designed and developed an Android-based prototype application to translate Bahasa Isyarat Malaysia (BIM) sign language into text in real-time.</li>
+                            <li>Engineered a data processing pipeline using the MediaPipe framework and CameraX API to extract 21 3D hand landmark coordinates from live video frames.</li>
+                            <li>Trained and optimized Deep Neural Network (DNN) and stacked LSTM models using TensorFlow, exporting them to TensorFlow Lite for efficient on-device mobile deployment.</li>
+                            <li>Programmed the mobile application using Kotlin and Android Studio, implementing real-time video stream processing and coordinate normalization.</li>
+                        </ul>
+                        <div class="flex flex-wrap gap-2 mt-6">
+                            <span class="px-3 py-1 bg-brand-blue text-brand-mint rounded-md text-xs font-mono border border-brand-teal/30">Kotlin</span>
+                            <span class="px-3 py-1 bg-brand-blue text-brand-mint rounded-md text-xs font-mono border border-brand-teal/30">TensorFlow Lite</span>
+                            <span class="px-3 py-1 bg-brand-blue text-brand-mint rounded-md text-xs font-mono border border-brand-teal/30">MediaPipe</span>
+                            <span class="px-3 py-1 bg-brand-blue text-brand-mint rounded-md text-xs font-mono border border-brand-teal/30">Android Studio</span>
+                        </div>
                     </div>
-                    <ul class="list-disc list-inside space-y-3 text-white/85 mt-4 marker:text-brand-mint">
-                        <li>Designed and developed an Android-based prototype application to translate Bahasa Isyarat Malaysia (BIM) sign language into text in real-time.</li>
-                        <li>Engineered a data processing pipeline using the MediaPipe framework and CameraX API to extract 21 3D hand landmark coordinates from live video frames.</li>
-                        <li>Trained and optimized Deep Neural Network (DNN) and stacked LSTM models using TensorFlow, exporting them to TensorFlow Lite for efficient on-device mobile deployment.</li>
-                        <li>Programmed the mobile application using Kotlin and Android Studio, implementing real-time video stream processing and coordinate normalization.</li>
-                    </ul>
-                    <div class="flex flex-wrap gap-2 mt-6">
-                        <span class="px-3 py-1 bg-brand-blue text-brand-mint rounded-md text-xs font-mono border border-brand-teal/30">Kotlin</span>
-                        <span class="px-3 py-1 bg-brand-blue text-brand-mint rounded-md text-xs font-mono border border-brand-teal/30">TensorFlow Lite</span>
-                        <span class="px-3 py-1 bg-brand-blue text-brand-mint rounded-md text-xs font-mono border border-brand-teal/30">MediaPipe</span>
-                        <span class="px-3 py-1 bg-brand-blue text-brand-mint rounded-md text-xs font-mono border border-brand-teal/30">Android Studio</span>
+
+                    <!-- System Monitor Group Project -->
+                    <div class="bg-brand-purple p-8 rounded-xl border border-brand-teal/40 hover:border-brand-mint transition-colors duration-300 shadow-xl">
+                        <div class="flex items-start justify-between flex-wrap gap-4 mb-4">
+                            <div>
+                                <span class="text-brand-teal font-mono font-semibold tracking-wider text-sm uppercase">Group Project (TMN4133)</span>
+                                <h3 class="text-2xl font-bold text-white mt-2">Linux System Monitor Utility</h3>
+                            </div>
+                            <div class="text-brand-mint text-3xl opacity-80"><i class="fas fa-terminal"></i></div>
+                        </div>
+                        <ul class="list-disc list-inside space-y-3 text-white/85 mt-4 marker:text-brand-mint">
+                            <li>Developed a system monitoring utility for Linux environments using C/C++.</li>
+                            <li>Utilized <code class="bg-brand-blue px-1 rounded text-brand-mint text-sm">dirent.h</code> and <code class="bg-brand-blue px-1 rounded text-brand-mint text-sm">stat()</code> functions for robust file statistics and directory traversal operations.</li>
+                            <li>Collaborated with team members using Git for version control and code integration.</li>
+                        </ul>
+                        <div class="flex items-center justify-between mt-6">
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 bg-brand-blue text-brand-mint rounded-md text-xs font-mono border border-brand-teal/30">C/C++</span>
+                                <span class="px-3 py-1 bg-brand-blue text-brand-mint rounded-md text-xs font-mono border border-brand-teal/30">Linux</span>
+                                <span class="px-3 py-1 bg-brand-blue text-brand-mint rounded-md text-xs font-mono border border-brand-teal/30">Git</span>
+                            </div>
+                            <a href="https://github.com/AlifStash/TMN4133-Group4-SysMonitor" target="_blank" class="text-brand-teal hover:text-brand-mint text-3xl transition-colors duration-300" title="View Source on GitHub"><i class="fab fa-github"></i></a>
+                        </div>
                     </div>
                 </div>
             </div>
